@@ -29,16 +29,15 @@ namespace ExchangeProject.Views.CItyView
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCityClose = new System.Windows.Forms.Button();
-            this.tcCity = new System.Windows.Forms.TabControl();
-            this.tabPageDetail = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCityId = new System.Windows.Forms.TextBox();
             this.btnCityUpdate = new System.Windows.Forms.Button();
@@ -50,18 +49,11 @@ namespace ExchangeProject.Views.CItyView
             this.txtSearchValue = new System.Windows.Forms.TextBox();
             this.dgvCities = new System.Windows.Forms.DataGridView();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.tabPageEdit = new System.Windows.Forms.TabPage();
-            this.btnCityCancel = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.dgvCitySecondTab = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tcCity.SuspendLayout();
-            this.tabPageDetail.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCities)).BeginInit();
-            this.tabPageEdit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCitySecondTab)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,7 +63,7 @@ namespace ExchangeProject.Views.CItyView
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 77);
+            this.panel1.Size = new System.Drawing.Size(800, 29);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -115,52 +107,40 @@ namespace ExchangeProject.Views.CItyView
             this.btnCityClose.Text = "X";
             this.btnCityClose.UseVisualStyleBackColor = false;
             // 
-            // tcCity
-            // 
-            this.tcCity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tcCity.Controls.Add(this.tabPageDetail);
-            this.tcCity.Controls.Add(this.tabPageEdit);
-            this.tcCity.Location = new System.Drawing.Point(0, 32);
-            this.tcCity.Name = "tcCity";
-            this.tcCity.SelectedIndex = 0;
-            this.tcCity.Size = new System.Drawing.Size(806, 423);
-            this.tcCity.TabIndex = 10;
-            // 
-            // tabPageDetail
-            // 
-            this.tabPageDetail.BackColor = System.Drawing.Color.White;
-            this.tabPageDetail.Controls.Add(this.panel3);
-            this.tabPageDetail.Controls.Add(this.txtSearchValue);
-            this.tabPageDetail.Controls.Add(this.dgvCities);
-            this.tabPageDetail.Controls.Add(this.btnSearch);
-            this.tabPageDetail.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDetail.Margin = new System.Windows.Forms.Padding(0);
-            this.tabPageDetail.Name = "tabPageDetail";
-            this.tabPageDetail.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDetail.Size = new System.Drawing.Size(798, 397);
-            this.tabPageDetail.TabIndex = 0;
-            this.tabPageDetail.Text = "Детали";
-            // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.txtCityId);
-            this.panel3.Controls.Add(this.btnCityUpdate);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.txtCityName);
-            this.panel3.Controls.Add(this.btnAddNew);
-            this.panel3.Controls.Add(this.btnDelete);
-            this.panel3.Location = new System.Drawing.Point(589, 14);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.txtSearchValue);
+            this.panel3.Controls.Add(this.dgvCities);
+            this.panel3.Controls.Add(this.btnSearch);
+            this.panel3.Location = new System.Drawing.Point(0, 35);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 376);
-            this.panel3.TabIndex = 28;
+            this.panel3.Size = new System.Drawing.Size(800, 416);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.txtCityId);
+            this.panel4.Controls.Add(this.btnCityUpdate);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.txtCityName);
+            this.panel4.Controls.Add(this.btnAddNew);
+            this.panel4.Controls.Add(this.btnDelete);
+            this.panel4.Location = new System.Drawing.Point(591, 7);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(203, 404);
+            this.panel4.TabIndex = 32;
             // 
             // label4
             // 
@@ -268,11 +248,11 @@ namespace ExchangeProject.Views.CItyView
             this.txtSearchValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtSearchValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.txtSearchValue.Location = new System.Drawing.Point(0, 15);
+            this.txtSearchValue.Location = new System.Drawing.Point(3, 7);
             this.txtSearchValue.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.txtSearchValue.Name = "txtSearchValue";
-            this.txtSearchValue.Size = new System.Drawing.Size(480, 26);
-            this.txtSearchValue.TabIndex = 21;
+            this.txtSearchValue.Size = new System.Drawing.Size(478, 26);
+            this.txtSearchValue.TabIndex = 30;
             // 
             // dgvCities
             // 
@@ -281,37 +261,37 @@ namespace ExchangeProject.Views.CItyView
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCities.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dgvCities.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCities.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCities.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCities.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCities.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCities.GridColor = System.Drawing.Color.Silver;
-            this.dgvCities.Location = new System.Drawing.Point(0, 47);
+            this.dgvCities.Location = new System.Drawing.Point(4, 39);
             this.dgvCities.Name = "dgvCities";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCities.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCities.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCities.ShowEditingIcon = false;
-            this.dgvCities.Size = new System.Drawing.Size(583, 344);
-            this.dgvCities.TabIndex = 20;
+            this.dgvCities.Size = new System.Drawing.Size(580, 372);
+            this.dgvCities.TabIndex = 29;
             // 
             // btnSearch
             // 
@@ -321,69 +301,13 @@ namespace ExchangeProject.Views.CItyView
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.btnSearch.Location = new System.Drawing.Point(483, 14);
+            this.btnSearch.Location = new System.Drawing.Point(484, 6);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(0);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 27);
-            this.btnSearch.TabIndex = 25;
+            this.btnSearch.TabIndex = 31;
             this.btnSearch.Text = "Поиск";
             this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // tabPageEdit
-            // 
-            this.tabPageEdit.Controls.Add(this.btnCityCancel);
-            this.tabPageEdit.Controls.Add(this.btnEdit);
-            this.tabPageEdit.Controls.Add(this.dgvCitySecondTab);
-            this.tabPageEdit.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEdit.Name = "tabPageEdit";
-            this.tabPageEdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEdit.Size = new System.Drawing.Size(798, 397);
-            this.tabPageEdit.TabIndex = 1;
-            this.tabPageEdit.Text = "Редактирование";
-            this.tabPageEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnCityCancel
-            // 
-            this.btnCityCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCityCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.btnCityCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCityCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCityCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.btnCityCancel.Location = new System.Drawing.Point(670, 77);
-            this.btnCityCancel.Name = "btnCityCancel";
-            this.btnCityCancel.Size = new System.Drawing.Size(100, 27);
-            this.btnCityCancel.TabIndex = 28;
-            this.btnCityCancel.Text = "Cancel";
-            this.btnCityCancel.UseVisualStyleBackColor = false;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.btnEdit.Location = new System.Drawing.Point(670, 29);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(114, 27);
-            this.btnEdit.TabIndex = 24;
-            this.btnEdit.Text = "Редактировать";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // dgvCitySecondTab
-            // 
-            this.dgvCitySecondTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCitySecondTab.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvCitySecondTab.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCitySecondTab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCitySecondTab.GridColor = System.Drawing.Color.Silver;
-            this.dgvCitySecondTab.Location = new System.Drawing.Point(-1, 0);
-            this.dgvCitySecondTab.Name = "dgvCitySecondTab";
-            this.dgvCitySecondTab.Size = new System.Drawing.Size(649, 397);
-            this.dgvCitySecondTab.TabIndex = 21;
             // 
             // CityView
             // 
@@ -391,7 +315,7 @@ namespace ExchangeProject.Views.CItyView
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(157)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tcCity);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "CityView";
             this.Text = "CityView";
@@ -399,14 +323,11 @@ namespace ExchangeProject.Views.CItyView
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.tcCity.ResumeLayout(false);
-            this.tabPageDetail.ResumeLayout(false);
-            this.tabPageDetail.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCities)).EndInit();
-            this.tabPageEdit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCitySecondTab)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,26 +335,21 @@ namespace ExchangeProject.Views.CItyView
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabControl tcCity;
-        private System.Windows.Forms.TabPage tabPageDetail;
-        private System.Windows.Forms.TextBox txtSearchValue;
-        private System.Windows.Forms.DataGridView dgvCities;
-        private System.Windows.Forms.Button btnAddNew;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TabPage tabPageEdit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCityClose;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvCitySecondTab;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCityId;
+        private System.Windows.Forms.Button btnCityUpdate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCityName;
-        private System.Windows.Forms.Button btnCityUpdate;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnCityCancel;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAddNew;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox txtSearchValue;
+        private System.Windows.Forms.DataGridView dgvCities;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

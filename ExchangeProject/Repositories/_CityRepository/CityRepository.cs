@@ -1,14 +1,11 @@
 ﻿using ExchangeProject.Models.Cities;
+using ExchangeProject.Repositories._CityRepository;
 using Npgsql;
 using NpgsqlTypes;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace ExchangeProject.Repositories
+namespace ExchangeProject.Repositories._CityRepository
 {
     public class CityRepository : BaseRepository, ICityRepository
     {

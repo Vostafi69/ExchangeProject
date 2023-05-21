@@ -98,14 +98,19 @@
   <ItemGroup>
     <Compile Include="Models\Cities\City.cs" />
     <Compile Include="Models\Cities\ICity.cs" />
-    <Compile Include="Models\Cities\ICityRepository.cs" />
+    <Compile Include="Models\UserDTO\IUser.cs" />
+    <Compile Include="Models\UserDTO\User.cs" />
+    <Compile Include="Repositories\_CityRepository\ICityRepository.cs" />
     <Compile Include="Presenters\CityPresenter.cs" />
     <Compile Include="Presenters\Common\ModelValidation.cs" />
+    <Compile Include="Presenters\LogInPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
-    <Compile Include="Repositories\CityRepository.cs" />
+    <Compile Include="Repositories\_CityRepository\CityRepository.cs" />
+    <Compile Include="Repositories\_LoginRepository\ILogInRepository.cs" />
+    <Compile Include="Repositories\_LoginRepository\LogInRepository.cs" />
     <Compile Include="Views\CItyView\CityView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +118,13 @@
       <DependentUpon>CityView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CItyView\ICityView.cs" />
+    <Compile Include="Views\LogInView\ILogInView.cs" />
+    <Compile Include="Views\LogInView\LogInView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LogInView\LogInView.Designer.cs">
+      <DependentUpon>LogInView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainView\IMainView.cs" />
     <Compile Include="Views\MainView\MainView.cs">
       <SubType>Form</SubType>
@@ -132,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="Views\CItyView\CityView.resx">
       <DependentUpon>CityView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LogInView\LogInView.resx">
+      <DependentUpon>LogInView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
