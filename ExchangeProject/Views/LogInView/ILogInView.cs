@@ -15,6 +15,7 @@ namespace ExchangeProject.Views.LogInView
         #region --Fields--
         string UserLogin { get; set; }
         string UserPassword { get; set; }
+        string Message { get; set; }
         #endregion
         #region --Methods--
         void Hide();

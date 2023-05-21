@@ -16,6 +16,7 @@ namespace ExchangeProject.Views.LogInView
 
         public string UserLogin { get => txtUserLogin.Text; set => txtUserLogin.Text = value; }
         public string UserPassword { get => txtUserPassword.Text; set => txtUserPassword.Text = value; }
+        public string Message { get; set; }
         
         public LogInView()
         {
