@@ -1,14 +1,8 @@
-﻿using ExchangeProject.Models.Cities;
-using ExchangeProject.Repositories;
+﻿using ExchangeProject.Repositories._CityRepository;
 using ExchangeProject.Views;
 using ExchangeProject.Views.CItyView;
 using ExchangeProject.Views.MainView;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ExchangeProject.Presenters
 {
@@ -22,6 +16,7 @@ namespace ExchangeProject.Presenters
             this.mainView = mainView;
             this.npgsqlConnectionString = npgsqlConnectionString;
             this.mainView.ShowCityView += ShowCityView;
+            this.mainView.Show();
         }
 
         private void ShowCityView(object sender, EventArgs e)
