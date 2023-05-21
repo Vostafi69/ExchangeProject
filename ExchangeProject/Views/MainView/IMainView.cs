@@ -9,5 +9,6 @@ namespace ExchangeProject.Views.MainView
     public interface IMainView
     {
         event EventHandler ShowCityView;
+        void Show();
     }
 }

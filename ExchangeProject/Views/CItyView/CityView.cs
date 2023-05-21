@@ -29,8 +29,8 @@ namespace ExchangeProject.Views.CItyView
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
-            tcCity.TabPages.Remove(tabPageEdit);
             btnCityClose.Click += delegate { this.Close(); };
+            dgvCities.DoubleClick += delegate { CopyEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         private void AssociateAndRaiseViewEvents()
@@ -60,7 +60,6 @@ namespace ExchangeProject.Views.CItyView
                     MessageBox.Show(Message);
                 }
             };
-            dgvCities.DoubleClick += delegate { CopyEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         public void SetCityListBindingSource(BindingSource cityList)

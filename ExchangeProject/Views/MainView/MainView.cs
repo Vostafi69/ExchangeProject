@@ -19,6 +19,10 @@ namespace ExchangeProject.Views.MainView
         }
 
         public event EventHandler ShowCityView;
+        protected override void OnClosed(EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void MainView_Load(object sender, EventArgs e)
         {

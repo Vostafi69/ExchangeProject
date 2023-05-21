@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ExchangeProject.Models.Cities;
 using System.Collections.Generic;
 
-namespace ExchangeProject.Models.Cities
+namespace ExchangeProject.Repositories._CityRepository
 {
     public interface ICityRepository
     {
