@@ -3,6 +3,7 @@ using ExchangeProject.Repositories._LogInRepository;
 using ExchangeProject.Views.LogInView;
 using ExchangeProject.Views.MainView;
 using System;
+using System.Windows.Forms;
 
 namespace ExchangeProject.Presenters
 {
@@ -22,9 +23,17 @@ namespace ExchangeProject.Presenters
         private void LogInUser(object sender, EventArgs e)
         {
             IMainView mainView = new MainView();
-            userDto = repository.GetRole(view.UserLogin, view.UserPassword);
-            this.view.Hide();
-            new MainPresenter(mainView, userDto.NpgsqlConnectionString);
+            try
+            {
+                userDto = repository.GetRole(view.UserLogin, view.UserPassword);
+                this.view.Hide();
+                new MainPresenter(mainView, userDto.NpgsqlConnectionString);
+            }
+            catch
+            {
+                view.Message = "Неверный логин или пароль";
+                MessageBox.Show(view.Message);
+            }
         }
     }
 }
