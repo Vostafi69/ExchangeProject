@@ -5,22 +5,19 @@ namespace ExchangeProject.Views
 {
     public interface ICityView
     {
+        #region --Events--
+        event EventHandler SearchEvent;
+        event EventHandler AddNewEvent;
+        event EventHandler DeleteEvent;
+        event EventHandler UpdateEvent;
+        event EventHandler CopyEvent;
+        #endregion
+
         #region --Fields--
         string CityId { get; set; }
         string CityName { get; set; }
         string SearchValue { get; set; }
-        bool IsEdit { get; set; }
-        bool IsSuccessful { get; set; }
         string Message { get; set; }
-        #endregion
-
-        #region --Events--
-        event EventHandler SearchEvent;
-        event EventHandler AddNewEvent;
-        event EventHandler EditEvent;
-        event EventHandler DeleteEvent;
-        event EventHandler SaveEvent;
-        event EventHandler CancelEvent;
         #endregion
 
         #region --Methods--

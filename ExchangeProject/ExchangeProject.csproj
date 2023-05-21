@@ -97,8 +97,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Cities\City.cs" />
+    <Compile Include="Models\Cities\ICity.cs" />
     <Compile Include="Models\Cities\ICityRepository.cs" />
     <Compile Include="Presenters\CityPresenter.cs" />
+    <Compile Include="Presenters\Common\ModelValidation.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

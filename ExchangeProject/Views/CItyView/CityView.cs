@@ -12,8 +12,18 @@ namespace ExchangeProject.Views.CItyView
 {
     public partial class CityView : Form, ICityView
     {
+        public event EventHandler SearchEvent;
+        public event EventHandler AddNewEvent;
+        public event EventHandler DeleteEvent;
+        public event EventHandler UpdateEvent;
+        public event EventHandler CopyEvent;
+
+        public string CityId { get => txtCityId.Text; set => txtCityId.Text = value; }
+        public string CityName { get => txtCityName.Text; set => txtCityName.Text = value; }
+        public string SearchValue { get => txtSearchValue.Text; set => txtSearchValue.Text = value; }
+        public string Message { get => message; set => message = value; }
+
         private string message;
-        private bool isEdit;
 
         public CityView()
         {
@@ -33,18 +43,13 @@ namespace ExchangeProject.Views.CItyView
             };
             btnAddNew.Click += delegate { 
                 AddNewEvent?.Invoke(this, EventArgs.Empty);
-                tcCity.TabPages.Remove(tabPageDetail);
-                tcCity.TabPages.Add(tabPageEdit);
-                tabPageDetail.Text = "Добавление";
+                MessageBox.Show(Message);
             };
-            btnEdit.Click += delegate { 
-                EditEvent?.Invoke(this, EventArgs.Empty);
-                tcCity.TabPages.Remove(tabPageDetail);
-                tcCity.TabPages.Add(tabPageEdit);
-                tabPageDetail.Text = "Редактирование";
+            btnCityUpdate.Click += delegate {
+                UpdateEvent?.Invoke(this, EventArgs.Empty);
+                MessageBox.Show(Message);
             };
             btnDelete.Click += delegate { 
-                DeleteEvent?.Invoke(this, EventArgs.Empty);
                 var result = MessageBox.Show("Удалить выбранную запись?",
                     "Осторожно",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning
@@ -55,35 +60,8 @@ namespace ExchangeProject.Views.CItyView
                     MessageBox.Show(Message);
                 }
             };
-            btnCitySave.Click += delegate { 
-                SaveEvent?.Invoke(this, EventArgs.Empty);
-                if (IsSuccessful)
-                {
-                    tcCity.TabPages.Remove(tabPageEdit);
-                    tcCity.TabPages.Add(tabPageDetail);
-                }
-                MessageBox.Show(Message);
-            };
-            btnCityCancel.Click += delegate { 
-                CancelEvent?.Invoke(this, EventArgs.Empty);
-                tcCity.TabPages.Remove(tabPageEdit);
-                tcCity.TabPages.Add(tabPageDetail);
-            };
+            dgvCities.DoubleClick += delegate { CopyEvent?.Invoke(this, EventArgs.Empty); };
         }
-
-        public string CityId { get => txtCityId.Text; set => txtCityId.Text = value; }
-        public string CityName { get => txtCityName.Text; set => txtCityName.Text = value; }
-        public string SearchValue { get => txtSearchValue.Text; set => txtSearchValue.Text = value; }
-        public bool IsEdit { get => isEdit; set => isEdit = value; }
-        public bool IsSuccessful { get => IsSuccessful; set => IsSuccessful = value; }
-        public string Message { get => message; set => message = value; }
-
-        public event EventHandler SearchEvent;
-        public event EventHandler AddNewEvent;
-        public event EventHandler EditEvent;
-        public event EventHandler DeleteEvent;
-        public event EventHandler SaveEvent;
-        public event EventHandler CancelEvent;
 
         public void SetCityListBindingSource(BindingSource cityList)
         {
