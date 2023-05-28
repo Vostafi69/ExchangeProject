@@ -96,10 +96,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Applicant\Applicant.cs" />
+    <Compile Include="Models\Applicant\IApplicant.cs" />
+    <Compile Include="Models\Archive\Archive.cs" />
+    <Compile Include="Models\Archive\IArchive.cs" />
     <Compile Include="Models\Cities\City.cs" />
     <Compile Include="Models\Cities\ICity.cs" />
+    <Compile Include="Models\Districts\District.cs" />
+    <Compile Include="Models\Districts\IDistrict.cs" />
+    <Compile Include="Models\Employed\Employed.cs" />
+    <Compile Include="Models\Employed\IEmployed.cs" />
+    <Compile Include="Models\JobGivers\IJobGivers.cs" />
+    <Compile Include="Models\JobGivers\JobGivers.cs" />
+    <Compile Include="Models\Job\IJob.cs" />
+    <Compile Include="Models\Job\Job.cs" />
+    <Compile Include="Models\Registration\IRegistration.cs" />
+    <Compile Include="Models\Registration\Registration.cs" />
+    <Compile Include="Models\StudyPlaces\IStudyPlaces.cs" />
+    <Compile Include="Models\StudyPlaces\StudyPlaces.cs" />
+    <Compile Include="Models\StudyTypes\IStudyType.cs" />
+    <Compile Include="Models\StudyTypes\StudyType.cs" />
+    <Compile Include="Models\SysTables\IPg_Shdepend.cs" />
+    <Compile Include="Models\SysTables\IPg_Am.cs" />
+    <Compile Include="Models\SysTables\IPg_Cast.cs" />
+    <Compile Include="Models\SysTables\Pg_Am.cs" />
+    <Compile Include="Models\SysTables\Pg_Cast.cs" />
+    <Compile Include="Models\SysTables\Pg_Shdepend.cs" />
     <Compile Include="Models\UserDTO\IUser.cs" />
     <Compile Include="Models\UserDTO\User.cs" />
+    <Compile Include="Presenters\ApplicantPresenter.cs" />
+    <Compile Include="Presenters\Common\Cryptography.cs" />
+    <Compile Include="Presenters\DistrictPresenter.cs" />
+    <Compile Include="Presenters\StudyPlacePresenter.cs" />
+    <Compile Include="Presenters\StudyTypePresenter.cs" />
+    <Compile Include="Presenters\SystemTablesPresenter.cs" />
+    <Compile Include="Repositories\_ApplicantRepository\ApplicantRepository.cs" />
+    <Compile Include="Repositories\_ApplicantRepository\IApplicantRepository.cs" />
     <Compile Include="Repositories\_CityRepository\ICityRepository.cs" />
     <Compile Include="Presenters\CityPresenter.cs" />
     <Compile Include="Presenters\Common\ModelValidation.cs" />
@@ -109,8 +141,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\_CityRepository\CityRepository.cs" />
+    <Compile Include="Repositories\_DistrictRepository\DistrictRepository.cs" />
+    <Compile Include="Repositories\_DistrictRepository\IDistrictRepository.cs" />
     <Compile Include="Repositories\_LoginRepository\ILogInRepository.cs" />
     <Compile Include="Repositories\_LoginRepository\LogInRepository.cs" />
+    <Compile Include="Repositories\_StudyPlaceRepository\IStudyPlaceRepository.cs" />
+    <Compile Include="Repositories\_StudyPlaceRepository\StudyPlaceRepository.cs" />
+    <Compile Include="Repositories\_StudyTypeRepository\IStudyTypeRepository.cs" />
+    <Compile Include="Repositories\_StudyTypeRepository\StudyTypeRepository.cs" />
+    <Compile Include="Repositories\_SystemTablesRepository\ISystemTablesRepository.cs" />
+    <Compile Include="Repositories\_SystemTablesRepository\SystemTablesRepository.cs" />
+    <Compile Include="Views\ApplicantView\ApplicantView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ApplicantView\ApplicantView.Designer.cs">
+      <DependentUpon>ApplicantView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ApplicantView\IApplicantView.cs" />
     <Compile Include="Views\CItyView\CityView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +165,27 @@
       <DependentUpon>CityView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CItyView\ICityView.cs" />
+    <Compile Include="Views\DistrictView\DistrictView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DistrictView\DistrictView.Designer.cs">
+      <DependentUpon>DistrictView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DistrictView\IDistrictView.cs" />
+    <Compile Include="Views\JobGiversView\IJobGiversView.cs" />
+    <Compile Include="Views\JobGiversView\JobGiversView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\JobGiversView\JobGiversView.Designer.cs">
+      <DependentUpon>JobGiversView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JobView\IJobView.cs" />
+    <Compile Include="Views\JobView\JobView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\JobView\JobView.Designer.cs">
+      <DependentUpon>JobView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LogInView\ILogInView.cs" />
     <Compile Include="Views\LogInView\LogInView.cs">
       <SubType>Form</SubType>
@@ -132,6 +200,34 @@
     <Compile Include="Views\MainView\MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\RegistrationView\IRegistrationView.cs" />
+    <Compile Include="Views\RegistrationView\RegistrationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RegistrationView\RegistrationView.Designer.cs">
+      <DependentUpon>RegistrationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudyPlaceView\IStudyPlaceView.cs" />
+    <Compile Include="Views\StudyPlaceView\StudyPlaceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudyPlaceView\StudyPlaceView.Designer.cs">
+      <DependentUpon>StudyPlaceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudyTypeView\IStudyTypeView.cs" />
+    <Compile Include="Views\StudyTypeView\StudyTypeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudyTypeView\StudyTypeView.Designer.cs">
+      <DependentUpon>StudyTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemTablesView\ISystemTablesView.cs" />
+    <Compile Include="Views\SystemTablesView\SystemTablesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SystemTablesView\SystemTablesView.Designer.cs">
+      <DependentUpon>SystemTablesView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -142,14 +238,38 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ApplicantView\ApplicantView.resx">
+      <DependentUpon>ApplicantView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CItyView\CityView.resx">
       <DependentUpon>CityView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DistrictView\DistrictView.resx">
+      <DependentUpon>DistrictView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\JobGiversView\JobGiversView.resx">
+      <DependentUpon>JobGiversView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\JobView\JobView.resx">
+      <DependentUpon>JobView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RegistrationView\RegistrationView.resx">
+      <DependentUpon>RegistrationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudyPlaceView\StudyPlaceView.resx">
+      <DependentUpon>StudyPlaceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudyTypeView\StudyTypeView.resx">
+      <DependentUpon>StudyTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SystemTablesView\SystemTablesView.resx">
+      <DependentUpon>SystemTablesView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -168,6 +288,7 @@
   <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

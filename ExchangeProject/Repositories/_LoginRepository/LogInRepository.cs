@@ -4,7 +4,7 @@ using NpgsqlTypes;
 
 namespace ExchangeProject.Repositories._LogInRepository
 {
-    class LogInRepository : BaseRepository, ILogInRepository
+    public class LogInRepository : BaseRepository, ILogInRepository
     {
         private readonly string GetRoleQuery = "SELECT usename, groname FROM pg_user AS PG_U " +
                             "LEFT JOIN pg_group AS PG_G ON " +

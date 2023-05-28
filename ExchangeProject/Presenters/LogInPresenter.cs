@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace ExchangeProject.Presenters
 {
-    class LogInPresenter
+    public class LogInPresenter
     {
         private ILogInView view;
         private ILogInRepository repository;
@@ -27,7 +27,7 @@ namespace ExchangeProject.Presenters
             {
                 userDto = repository.GetRole(view.UserLogin, view.UserPassword);
                 this.view.Hide();
-                new MainPresenter(mainView, userDto.NpgsqlConnectionString);
+                new MainPresenter(mainView, userDto, this.view);
             }
             catch
             {

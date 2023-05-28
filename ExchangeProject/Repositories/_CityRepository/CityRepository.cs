@@ -79,7 +79,7 @@ namespace ExchangeProject.Repositories._CityRepository
                     {
                         while (reader.Read())
                         {
-                            var city = new City();
+                            ICity city = new City();
                             city.CityId = (int)reader[0];
                             city.CityName = reader[1].ToString();
                             cityList.Add(city);
@@ -103,12 +103,12 @@ namespace ExchangeProject.Repositories._CityRepository
                     command.Connection = connection;
                     command.CommandText = GetAllQuery;
                     command.Parameters.Add("@cityid", NpgsqlDbType.Integer).Value = cityid;
-                    command.Parameters.AddWithValue("@cityname", NpgsqlDbType.Varchar).Value = cityname + "%";
+                    command.Parameters.Add("@cityname", NpgsqlDbType.Varchar).Value = cityname + "%";
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            var city = new City();
+                            ICity city = new City();
                             city.CityId = (int)reader[0];
                             city.CityName = reader[1].ToString();
                             cityList.Add(city);

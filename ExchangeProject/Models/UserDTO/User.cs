@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExchangeProject.Models.UserDTO
 {
-    class User : IUser
+    public class User : IUser
     {
         public string UserName { get; set; }
         public string UserRole { get; set; }
