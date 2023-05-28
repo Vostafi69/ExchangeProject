@@ -172,6 +172,13 @@
       <DependentUpon>DistrictView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DistrictView\IDistrictView.cs" />
+    <Compile Include="Views\EmployedView\EmplyedView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployedView\EmplyedView.Designer.cs">
+      <DependentUpon>EmplyedView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployedView\IEmployedView.cs" />
     <Compile Include="Views\JobGiversView\IJobGiversView.cs" />
     <Compile Include="Views\JobGiversView\JobGiversView.cs">
       <SubType>Form</SubType>
@@ -246,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DistrictView\DistrictView.resx">
       <DependentUpon>DistrictView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployedView\EmplyedView.resx">
+      <DependentUpon>EmplyedView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\JobGiversView\JobGiversView.resx">
       <DependentUpon>JobGiversView.cs</DependentUpon>
