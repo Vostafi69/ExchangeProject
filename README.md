@@ -12,5 +12,6 @@
  <li>Добавление записей (администратор)</li>
 </ul>
 
-<img src="./ExchangeProject/Resources/logo.png" alt="Лоин форма">
+<h3 align="center">Форма авторизации</h3>
+<img src="./ExchangeProject/Resources/logForm.png" alt="Лоин форма">
 
