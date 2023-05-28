@@ -172,6 +172,13 @@
       <DependentUpon>DistrictView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DistrictView\IDistrictView.cs" />
+    <Compile Include="Views\EmployerView\EmployerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployerView\EmployerView.Designer.cs">
+      <DependentUpon>EmployerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployerView\IEmpoyerView.cs" />
     <Compile Include="Views\JobGiversView\IJobGiversView.cs" />
     <Compile Include="Views\JobGiversView\JobGiversView.cs">
       <SubType>Form</SubType>
