@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExchangeProject.Repositories._LogInRepository
 {
-    interface ILogInRepository
+    public interface ILogInRepository
     {
         IUser GetRole(string login, string passwd);
     }

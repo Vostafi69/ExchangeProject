@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExchangeProject.Views.LogInView
 {
-    interface ILogInView
+    public interface ILogInView
     {
         #region --Events--
         event EventHandler EventLogIn;
@@ -19,6 +19,7 @@ namespace ExchangeProject.Views.LogInView
         #endregion
         #region --Methods--
         void Hide();
+        void Show();
         #endregion
     }
 }
