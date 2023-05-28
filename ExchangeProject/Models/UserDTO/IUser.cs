@@ -1,6 +1,6 @@
 ﻿namespace ExchangeProject.Models.UserDTO
 {
-    interface IUser
+    public interface IUser
     {
         string UserName { get; set; }
         string UserRole { get; set; }

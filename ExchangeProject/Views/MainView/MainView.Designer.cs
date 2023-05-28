@@ -35,20 +35,33 @@ namespace ExchangeProject.Views.MainView
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtUser = new System.Windows.Forms.Label();
+            this.btnChangeUser = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnStudyPlace = new System.Windows.Forms.Button();
+            this.btnStudyType = new System.Windows.Forms.Button();
+            this.btnShowDistricts = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnArchive = new System.Windows.Forms.Button();
+            this.btnWorkers = new System.Windows.Forms.Button();
+            this.btnJobGivers = new System.Windows.Forms.Button();
+            this.btnJobs = new System.Windows.Forms.Button();
+            this.btnRegistration = new System.Windows.Forms.Button();
+            this.btnApplicants = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnSysTb = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +73,9 @@ namespace ExchangeProject.Views.MainView
             this.btnShowCity.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnShowCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnShowCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.btnShowCity.Location = new System.Drawing.Point(2, 3);
+            this.btnShowCity.Location = new System.Drawing.Point(1, 3);
             this.btnShowCity.Name = "btnShowCity";
-            this.btnShowCity.Size = new System.Drawing.Size(182, 37);
+            this.btnShowCity.Size = new System.Drawing.Size(177, 37);
             this.btnShowCity.TabIndex = 2;
             this.btnShowCity.Text = "Города";
             this.btnShowCity.UseVisualStyleBackColor = false;
@@ -75,7 +88,7 @@ namespace ExchangeProject.Views.MainView
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(3);
-            this.panel1.Size = new System.Drawing.Size(200, 561);
+            this.panel1.Size = new System.Drawing.Size(201, 561);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -88,7 +101,7 @@ namespace ExchangeProject.Views.MainView
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 555);
+            this.panel2.Size = new System.Drawing.Size(195, 555);
             this.panel2.TabIndex = 3;
             // 
             // panel5
@@ -115,20 +128,253 @@ namespace ExchangeProject.Views.MainView
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.button9);
-            this.panel4.Controls.Add(this.button8);
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.btnShowCity);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.btnChangeUser);
+            this.panel4.Controls.Add(this.tabControl1);
             this.panel4.Location = new System.Drawing.Point(3, 124);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(188, 428);
             this.panel4.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(96)))), ((int)(((byte)(130)))));
+            this.panel6.Controls.Add(this.txtUser);
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(180, 28);
+            this.panel6.TabIndex = 7;
+            // 
+            // txtUser
+            // 
+            this.txtUser.BackColor = System.Drawing.Color.Transparent;
+            this.txtUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtUser.Location = new System.Drawing.Point(0, 0);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(180, 28);
+            this.txtUser.TabIndex = 0;
+            this.txtUser.Text = "Пользователь: ";
+            this.txtUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnChangeUser
+            // 
+            this.btnChangeUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnChangeUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(157)))));
+            this.btnChangeUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnChangeUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChangeUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChangeUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnChangeUser.Location = new System.Drawing.Point(4, 384);
+            this.btnChangeUser.Name = "btnChangeUser";
+            this.btnChangeUser.Size = new System.Drawing.Size(177, 37);
+            this.btnChangeUser.TabIndex = 6;
+            this.btnChangeUser.Text = "Выход";
+            this.btnChangeUser.UseVisualStyleBackColor = false;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(0, 35);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(186, 343);
+            this.tabControl1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.Controls.Add(this.btnStudyPlace);
+            this.tabPage1.Controls.Add(this.btnStudyType);
+            this.tabPage1.Controls.Add(this.btnShowDistricts);
+            this.tabPage1.Controls.Add(this.btnShowCity);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(178, 317);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Справочники";
+            // 
+            // btnStudyPlace
+            // 
+            this.btnStudyPlace.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStudyPlace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnStudyPlace.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnStudyPlace.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStudyPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStudyPlace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnStudyPlace.Location = new System.Drawing.Point(0, 132);
+            this.btnStudyPlace.Name = "btnStudyPlace";
+            this.btnStudyPlace.Size = new System.Drawing.Size(177, 37);
+            this.btnStudyPlace.TabIndex = 5;
+            this.btnStudyPlace.Text = "Учебные заведения";
+            this.btnStudyPlace.UseVisualStyleBackColor = false;
+            // 
+            // btnStudyType
+            // 
+            this.btnStudyType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStudyType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnStudyType.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnStudyType.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStudyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStudyType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnStudyType.Location = new System.Drawing.Point(1, 89);
+            this.btnStudyType.Name = "btnStudyType";
+            this.btnStudyType.Size = new System.Drawing.Size(177, 37);
+            this.btnStudyType.TabIndex = 4;
+            this.btnStudyType.Text = "Типы образований";
+            this.btnStudyType.UseVisualStyleBackColor = false;
+            // 
+            // btnShowDistricts
+            // 
+            this.btnShowDistricts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnShowDistricts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnShowDistricts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnShowDistricts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnShowDistricts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnShowDistricts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnShowDistricts.Location = new System.Drawing.Point(1, 46);
+            this.btnShowDistricts.Name = "btnShowDistricts";
+            this.btnShowDistricts.Size = new System.Drawing.Size(177, 37);
+            this.btnShowDistricts.TabIndex = 3;
+            this.btnShowDistricts.Text = "Улицы";
+            this.btnShowDistricts.UseVisualStyleBackColor = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnArchive);
+            this.tabPage2.Controls.Add(this.btnWorkers);
+            this.tabPage2.Controls.Add(this.btnJobGivers);
+            this.tabPage2.Controls.Add(this.btnJobs);
+            this.tabPage2.Controls.Add(this.btnRegistration);
+            this.tabPage2.Controls.Add(this.btnApplicants);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(178, 317);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Таблицы";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnArchive
+            // 
+            this.btnArchive.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnArchive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnArchive.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnArchive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnArchive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnArchive.Location = new System.Drawing.Point(1, 218);
+            this.btnArchive.Name = "btnArchive";
+            this.btnArchive.Size = new System.Drawing.Size(177, 37);
+            this.btnArchive.TabIndex = 8;
+            this.btnArchive.Text = "Архив";
+            this.btnArchive.UseVisualStyleBackColor = false;
+            // 
+            // btnWorkers
+            // 
+            this.btnWorkers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnWorkers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnWorkers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnWorkers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnWorkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnWorkers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnWorkers.Location = new System.Drawing.Point(1, 175);
+            this.btnWorkers.Name = "btnWorkers";
+            this.btnWorkers.Size = new System.Drawing.Size(177, 37);
+            this.btnWorkers.TabIndex = 7;
+            this.btnWorkers.Text = "Занятые";
+            this.btnWorkers.UseVisualStyleBackColor = false;
+            // 
+            // btnJobGivers
+            // 
+            this.btnJobGivers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnJobGivers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnJobGivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnJobGivers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnJobGivers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnJobGivers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnJobGivers.Location = new System.Drawing.Point(1, 132);
+            this.btnJobGivers.Name = "btnJobGivers";
+            this.btnJobGivers.Size = new System.Drawing.Size(177, 37);
+            this.btnJobGivers.TabIndex = 6;
+            this.btnJobGivers.Text = "Работодатели";
+            this.btnJobGivers.UseVisualStyleBackColor = false;
+            // 
+            // btnJobs
+            // 
+            this.btnJobs.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnJobs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnJobs.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnJobs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnJobs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnJobs.Location = new System.Drawing.Point(1, 89);
+            this.btnJobs.Name = "btnJobs";
+            this.btnJobs.Size = new System.Drawing.Size(177, 37);
+            this.btnJobs.TabIndex = 5;
+            this.btnJobs.Text = "Работы";
+            this.btnJobs.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistration
+            // 
+            this.btnRegistration.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnRegistration.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnRegistration.Location = new System.Drawing.Point(1, 46);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(177, 37);
+            this.btnRegistration.TabIndex = 4;
+            this.btnRegistration.Text = "Зарегистрированные";
+            this.btnRegistration.UseVisualStyleBackColor = false;
+            // 
+            // btnApplicants
+            // 
+            this.btnApplicants.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnApplicants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnApplicants.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnApplicants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnApplicants.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnApplicants.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnApplicants.Location = new System.Drawing.Point(1, 3);
+            this.btnApplicants.Name = "btnApplicants";
+            this.btnApplicants.Size = new System.Drawing.Size(177, 37);
+            this.btnApplicants.TabIndex = 3;
+            this.btnApplicants.Text = "Заявители";
+            this.btnApplicants.UseVisualStyleBackColor = false;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnSysTb);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(178, 317);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Системные таблицы";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnSysTb
+            // 
+            this.btnSysTb.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSysTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
+            this.btnSysTb.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnSysTb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSysTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSysTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.btnSysTb.Location = new System.Drawing.Point(1, 3);
+            this.btnSysTb.Name = "btnSysTb";
+            this.btnSysTb.Size = new System.Drawing.Size(177, 37);
+            this.btnSysTb.TabIndex = 3;
+            this.btnSysTb.Text = "Системные таблицы";
+            this.btnSysTb.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -151,141 +397,6 @@ namespace ExchangeProject.Views.MainView
             this.label1.TabIndex = 0;
             this.label1.Text = "Биржа труда";
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button1.Location = new System.Drawing.Point(2, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Города";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button2.Location = new System.Drawing.Point(2, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Города";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button3.Location = new System.Drawing.Point(2, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 37);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Города";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button4.Location = new System.Drawing.Point(2, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(182, 37);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Города";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button5.Location = new System.Drawing.Point(2, 218);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(182, 37);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Города";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button6.Location = new System.Drawing.Point(2, 261);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(182, 37);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Города";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button7.Location = new System.Drawing.Point(3, 304);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(182, 37);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Города";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button8.Location = new System.Drawing.Point(2, 347);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(182, 37);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Города";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.button9.Location = new System.Drawing.Point(2, 390);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(182, 37);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Города";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,6 +414,11 @@ namespace ExchangeProject.Views.MainView
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -319,14 +435,22 @@ namespace ExchangeProject.Views.MainView
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button btnShowDistricts;
+        private System.Windows.Forms.Button btnStudyPlace;
+        private System.Windows.Forms.Button btnStudyType;
+        private System.Windows.Forms.Button btnApplicants;
+        private System.Windows.Forms.Button btnSysTb;
+        private System.Windows.Forms.Button btnChangeUser;
+        private System.Windows.Forms.Button btnArchive;
+        private System.Windows.Forms.Button btnWorkers;
+        private System.Windows.Forms.Button btnJobGivers;
+        private System.Windows.Forms.Button btnJobs;
+        private System.Windows.Forms.Button btnRegistration;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label txtUser;
     }
 }
