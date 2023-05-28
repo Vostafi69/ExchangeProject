@@ -3,4 +3,4 @@
  
  <p >Автоматизированная система деятельности биржы труда. Построена на архитектуре MVP. Основная часть работы проведена со стороны сервера PostgreSQL.</p>
 
-<img style="width: 200px;" src="./ExchangeProject/Resources/logo.png" alt="Лоин форма">
+<img style="width: 40px;" src="./ExchangeProject/Resources/logo.png" alt="Лоин форма">
