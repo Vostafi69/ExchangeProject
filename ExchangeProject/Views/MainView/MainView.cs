@@ -27,7 +27,7 @@ namespace ExchangeProject.Views.MainView
             btnRegistration.Click += delegate { ShowRegistration?.Invoke(this, EventArgs.Empty); };
             btnJobs.Click += delegate { ShowJobs?.Invoke(this, EventArgs.Empty); };
             btnJobGivers.Click += delegate { ShowJobsGivers?.Invoke(this, EventArgs.Empty); };
-            btnWorkers.Click += delegate { ShowWorkers?.Invoke(this, EventArgs.Empty); };
+            btnWorkers.Click += delegate { ShowEmployd?.Invoke(this, EventArgs.Empty); };
             btnArchive.Click += delegate { ShowArchive?.Invoke(this, EventArgs.Empty); };
         }
 
@@ -41,7 +41,7 @@ namespace ExchangeProject.Views.MainView
         public event EventHandler ShowRegistration;
         public event EventHandler ShowJobs;
         public event EventHandler ShowJobsGivers;
-        public event EventHandler ShowWorkers;
+        public event EventHandler ShowEmployd;
         public event EventHandler ShowArchive;
 
         protected override void OnClosed(EventArgs e)

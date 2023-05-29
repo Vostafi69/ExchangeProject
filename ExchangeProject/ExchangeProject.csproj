@@ -127,6 +127,9 @@
     <Compile Include="Presenters\ApplicantPresenter.cs" />
     <Compile Include="Presenters\Common\Cryptography.cs" />
     <Compile Include="Presenters\DistrictPresenter.cs" />
+    <Compile Include="Presenters\EmployedPresenter.cs" />
+    <Compile Include="Presenters\JobGiversPresenter.cs" />
+    <Compile Include="Presenters\JobsPresenter.cs" />
     <Compile Include="Presenters\StudyPlacePresenter.cs" />
     <Compile Include="Presenters\StudyTypePresenter.cs" />
     <Compile Include="Presenters\SystemTablesPresenter.cs" />
@@ -143,6 +146,12 @@
     <Compile Include="Repositories\_CityRepository\CityRepository.cs" />
     <Compile Include="Repositories\_DistrictRepository\DistrictRepository.cs" />
     <Compile Include="Repositories\_DistrictRepository\IDistrictRepository.cs" />
+    <Compile Include="Repositories\_EmployedRepository\EmployedRepository.cs" />
+    <Compile Include="Repositories\_EmployedRepository\IEmployedRepository.cs" />
+    <Compile Include="Repositories\_JobGiversRepository\IJobGiversRepository.cs" />
+    <Compile Include="Repositories\_JobGiversRepository\JobGiverRepository.cs" />
+    <Compile Include="Repositories\_JobsRepository\IJobsRepository.cs" />
+    <Compile Include="Repositories\_JobsRepository\JobsRepository.cs" />
     <Compile Include="Repositories\_LoginRepository\ILogInRepository.cs" />
     <Compile Include="Repositories\_LoginRepository\LogInRepository.cs" />
     <Compile Include="Repositories\_StudyPlaceRepository\IStudyPlaceRepository.cs" />

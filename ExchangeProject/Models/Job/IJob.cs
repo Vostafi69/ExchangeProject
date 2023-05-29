@@ -14,7 +14,7 @@ namespace ExchangeProject.Models.Job
         decimal Money { get; set; }
         [DisplayName("Дополнительно")]
         string More { get; set; }
-        [DisplayName("Вакансия закрыта")]
+        [DisplayName("Вакансия открыта")]
         bool Available { get; set; }
         [DisplayName("Тип работы")]
         string JobType { get; set; }

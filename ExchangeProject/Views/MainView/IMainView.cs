@@ -19,7 +19,7 @@ namespace ExchangeProject.Views.MainView
         event EventHandler ShowRegistration;
         event EventHandler ShowJobs;
         event EventHandler ShowJobsGivers;
-        event EventHandler ShowWorkers;
+        event EventHandler ShowEmployd;
         event EventHandler ShowArchive;
 
         void Show();

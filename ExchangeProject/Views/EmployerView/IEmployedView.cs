@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ExchangeProject.Views.EmployerView
 {
-    interface IEmployedView
+    public interface IEmployedView
     {
         #region --Events--
         event EventHandler SearchEvent;

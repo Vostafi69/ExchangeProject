@@ -2,6 +2,9 @@
 using ExchangeProject.Repositories._ApplicantRepository;
 using ExchangeProject.Repositories._CityRepository;
 using ExchangeProject.Repositories._DistrictRepository;
+using ExchangeProject.Repositories._EmployedRepository;
+using ExchangeProject.Repositories._JobGiversRepository;
+using ExchangeProject.Repositories._JobsRepository;
 using ExchangeProject.Repositories._StudyPlaceRepository;
 using ExchangeProject.Repositories._StudyTypeRepository;
 using ExchangeProject.Repositories._SystemTablesRepository;
@@ -9,6 +12,9 @@ using ExchangeProject.Views;
 using ExchangeProject.Views.ApplicantView;
 using ExchangeProject.Views.CItyView;
 using ExchangeProject.Views.DistrictView;
+using ExchangeProject.Views.EmployerView;
+using ExchangeProject.Views.JobGiversView;
+using ExchangeProject.Views.JobView;
 using ExchangeProject.Views.LogInView;
 using ExchangeProject.Views.MainView;
 using ExchangeProject.Views.StudyPlaceView;
@@ -35,9 +41,33 @@ namespace ExchangeProject.Presenters
             this.mainView.ShowStudyTypeView += ShowStudyTypeView;
             this.mainView.ShowApplicantsView += ShowApplicantsView;
             this.mainView.ShowSystemTablesView += ShowSystemTablesView;
+            this.mainView.ShowEmployd += ShowEmployedView;
             this.mainView.ChangeUser += ChangeUser;
+            this.mainView.ShowJobsGivers += ShowJobGivers;
+            this.mainView.ShowJobs += ShowJobs;
             mainView.Load(user.UserRole, user.UserName);
             this.mainView.Show();
+        }
+
+        private void ShowJobs(object sender, EventArgs e)
+        {
+            IJobView view = JobView.GetInstance((MainView)mainView);
+            IJobsRepository repository = new JobsRepository(npgsqlConnectionString);
+            new JobsPresenter(view, repository);
+        }
+
+        private void ShowJobGivers(object sender, EventArgs e)
+        {
+            IJobGiversView view = JobGiversView.GetInstance((MainView)mainView);
+            IJobGiversRepository repository = new JobGiverRepository(npgsqlConnectionString);
+            new JobGiversPresenter(view, repository);
+        }
+
+        private void ShowEmployedView(object sender, EventArgs e)
+        {
+            IEmployedView view = EmployedView.GetInstance((MainView)mainView);
+            IEmployedRepository repository = new EmployedRepository(npgsqlConnectionString);
+            new EmployedPresenter(view, repository);
         }
 
         private void ChangeUser(object sender, EventArgs e)
