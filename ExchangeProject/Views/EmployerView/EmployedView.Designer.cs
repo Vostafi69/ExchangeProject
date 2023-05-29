@@ -319,7 +319,6 @@ namespace ExchangeProject.Views.EmployerView
             this.Controls.Add(this.panel3);
             this.Name = "EmployedView";
             this.Text = "EmployedView";
-            this.Load += new System.EventHandler(this.EmployedView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmp)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
