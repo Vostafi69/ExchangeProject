@@ -2,6 +2,7 @@
 using ExchangeProject.Repositories._LogInRepository;
 using ExchangeProject.Views.LogInView;
 using ExchangeProject.Views.MainView;
+using Npgsql;
 using System;
 using System.Windows.Forms;
 
@@ -29,9 +30,11 @@ namespace ExchangeProject.Presenters
                 this.view.Hide();
                 new MainPresenter(mainView, userDto, this.view);
             }
-            catch
+            catch (Exception ex)
             {
-                view.Message = "Неверный логин или пароль";
+                string answer = ex.ToString();
+                if (answer.Contains("3D000")) view.Message = "Не удалось подключиться к базе данных";
+                else view.Message = "Неверный логин или пароль";
                 MessageBox.Show(view.Message);
             }
         }

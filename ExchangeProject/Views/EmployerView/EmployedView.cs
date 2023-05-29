@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ExchangeProject.Views.EmployerView
 {
-    public partial class EmployerView : Form
+    public partial class EmployedView : Form
     {
-        public EmployerView()
+        public EmployedView()
         {
             InitializeComponent();
+        }
+
+        private void EmployedView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
