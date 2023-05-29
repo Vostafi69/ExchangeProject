@@ -16,6 +16,6 @@
 <img src="./ExchangeProject/Resources/logForm.png" alt="Лоин форма">
 <h3>Просмотр системных таблиц</h3>
 <img src="./ExchangeProject/Resources/sysTables.png" alt="Лоин форма">
-<h3>ПРимер формы с CRUD операциями</h3>
+<h3>Пример формы с CRUD операциями</h3>
 <img src="./ExchangeProject/Resources/table.png" alt="Лоин форма">
 
